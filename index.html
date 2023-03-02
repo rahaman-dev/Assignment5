@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rectangle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  created top of first div  -->
+    <div class="first">
+      <div class="left">
+        <h1>Interactive</h1>
+        <h3>Geometry Genius</h3>
+      </div>
+      <div class="first-right">
+        <button id="blogBtn" class="blog-btn">Blog</button>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="cat">
+        <div id="card1" class="card">
+          <div><img src="./img/Triangle.png" alt="" class="img" /></div>
+          <h1 id="Triangle" class="title">Triangle</h1>
+          <p class="formula">(A)= 0.5 X b X =h</p>
+          <input
+            id="inputFliedTriangle1"
+            type="text"
+            class="inputField"
+            placeholder="B"
+          />
+          <span>CM</span>
+          <input
+            id="getInputFliedTriangle2"
+            type="text"
+            class="inputField"
+            placeholder="H"
+          />
+          <span>CM</span>
+          <button id="BtnTriangle" class="btn">Calculate</button>
+        </div>
+
+        <div id="card2" class="card">
+          <div><img src="./img/Rectangle 9-1.png" alt="" class="img" /></div>
+          <h1 id="Rectangle" class="title">Rectangle</h1>
+          <p class="formula">
+            Area (A) = <span id="formulaRectangle">w x i</span>
+          </p>
+          <p class="formula"></p>
+          <input
+            type="text"
+            id="inputFieldRectangle1"
+            class="inputField"
+            placeholder="W"
+          />
+          <span>CM</span>
+          <input
+            type="text"
+            id="inputFieldRectangle2"
+            class="inputField"
+            placeholder="L"
+          />
+          <span>CM</span>
+          <button id="BtnRectangle" class="btn">Calculate</button>
+        </div>
+
+        <div id="card3" class="card">
+          <div><img src="./img/Parallelogram.png" alt="" class="img" /></div>
+          <h1 id="Parallelogram" class="title">Parallelogram</h1>
+          <p class="formula">Area (A) = b h</p>
+          <p class="formula">b=10cm, h=12cm</p>
+          <p class="formula"></p>
+          <input
+            id="inputFieldParallelogramBtn1"
+            type="text"
+            class="inputField"
+            placeholder="B"
+          />
+          <span>CM</span>
+          <input
+            id="inputFieldParallelogramBtn2"
+            type="text"
+            class="inputField"
+            placeholder="H"
+          />
+          <span>CM</span>
+          <button id="ParallelogramBtn" class="btn">Calculate</button>
+        </div>
+
+        <div id="card4" class="card">
+          <div><img src="./img/Rhombus.png" alt="" class="img" /></div>
+          <h1 id="Rhombus" class="title">Rhombus</h1>
+          <p class="formula">Area (A) = 0.5 d 1 d 2</p>
+          <p class="formula">d 1 = 16cm d 2 = 8cm</p>
+          <p class="formula"></p>
+          <input
+            id="inputFieldRhombusBtn1"
+            type="text"
+            class="inputField"
+            placeholder="D1"
+          />
+          <span>CM</span>
+          <input
+            id="inputFieldRhombusBtn2"
+            type="text"
+            class="inputField"
+            placeholder="D1"
+          />
+          <span>CM</span>
+          <button id="RhombusBtn" class="btn">Calculate</button>
+        </div>
+
+        <div id="card5" class="card">
+          <div><img src="./img/Pentagon.png" alt="" class="img" /></div>
+          <h1 id="Pentagon" class="title">Pentagon</h1>
+          <p class="formula">Area (A) = 0.5 p b</p>
+          <p class="formula">p = 6cm, b = 10cm</p>
+          <p class="formula"></p>
+          <input
+            id="inputFliedPentagon1"
+            type="text"
+            class="inputField"
+            placeholder="P"
+          />
+          <span>CM</span>
+          <input
+            id="inputFliedPentagon2"
+            type="text"
+            class="inputField"
+            placeholder="B"
+          />
+          <span>CM</span>
+          <button id="PentagonBtn" class="btn">Calculate</button>
+        </div>
+
+        <div id="card6" class="card">
+          <div><img src="./img/Ellipse.png" alt="" class="img" /></div>
+          <h1 id="Ellipse" class="title">Ellipse</h1>
+          <p class="formula">Area (A) = π ab</p>
+          <p class="formula">a = 10cm, b = 4cm</p>
+          <p class="formula"></p>
+          <input
+            id="inputFliedEllipse1"
+            type="text"
+            class="inputField"
+            placeholder="A"
+          />
+          <span>CM</span>
+          <input
+            id="inputFliedEllipse2"
+            type="text"
+            class="inputField"
+            placeholder="B"
+          />
+          <span>CM</span>
+          <button id="EllipseBtn" class="btn">Calculate</button>
+        </div>
+      </div>
+      <div id="div"></div>
+      <div id="right" class="right">
+        <h1 id="RightArea">Area Calculation</h1>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
